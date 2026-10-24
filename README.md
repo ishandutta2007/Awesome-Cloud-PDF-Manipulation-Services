@@ -30,6 +30,8 @@ A curated, developer-first list of **Cloud PDF Manipulation Services**, **REST A
 - [☁️ SaaS & Hosted PDF Cloud APIs](#️-saas--hosted-pdf-cloud-apis)
 - [💻 Open-Source PDF Engines & Toolkits](#-open-source-pdf-engines--toolkits)
 - [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support](#-support)
+- [📈 Star History](#-star-history)
 - [⚠️ Disclaimer](#️-disclaimer)
 
 ---
@@ -140,6 +142,22 @@ Contributions are welcome! Help keep this list comprehensive, accurate, and up t
 4. 💾 Commit your changes (`git commit -m "feat: add NewService to SaaS table"`).
 5. 🚀 Push to the branch (`git push origin feature/add-service`).
 6. 📬 Open a Pull Request with a clear summary.
+
+---
+
+## 💖 Support
+
+Thank you for exploring and using this curated list! If you found this resource helpful for your document processing pipelines and architecture research, please consider supporting the project:
+
+- ⭐ **Star this repository** on GitHub to help others discover it.
+- 🍴 **Fork and share** it with your fellow developers, engineers, and teams.
+- ☕ **Buy me a coffee**: Support ongoing maintenance and curated updates directly via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Cloud-PDF-Manipulation-Services&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Cloud-PDF-Manipulation-Services&type=date&legend=top-left)
 
 ---
 
