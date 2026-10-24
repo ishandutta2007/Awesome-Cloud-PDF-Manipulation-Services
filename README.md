@@ -1,151 +1,156 @@
-# Awesome-Cloud-PDF-Manipulation-Services
-
-## Top Cloud PDF Manipulation Services Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Document Processing APIs, Server-Side PDF Operations & Self-Hosted PDF Toolkits*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Cloud PDF Manipulation Services**. These tools provide APIs and managed infrastructure for working with PDFs—merging, splitting, converting, compressing, OCR, and e-signing—so applications can handle document workflows without building low-level PDF engines from scratch.
-
-
-
-**Examples** include Adobe PDF Services, Smallpdf, iLovePDF, CloudConvert, Sejda, PDF24, Zamzar, Apryse, and Foxit (the category leaders).
-
-
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, avoiding per-transaction fees, and controlling document data. The open-source landscape is anchored by **Sejda SDK** (the AGPLv3 core behind Sejda's commercial API), **PDF.js** (Mozilla's rendering engine), **pdf-lib** (the JavaScript PDF creation/manipulation library), and **PyMuPDF** (the Python binding for MuPDF), with **Stirling-PDF** providing a full self-hosted web UI for common operations.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-| Product | Description | Pricing | Free Tier Limit |
-
-| :--- | :--- | :--- | :--- |
-
-| **[Adobe PDF Services API](https://developer.adobe.com/document-services/apis/pdf-services/)** | Enterprise document processing API for create, convert, combine, export, OCR, and compress operations. | **$0.05 per document transaction** after trial; enterprise packages available (e.g., 25,000 transactions for ~$2,717 via CDW) . | **6-month free trial** with transaction allowance; PDF Embed API is free . |
-
-| **[Foxit PDF Services API](https://app.developer-api.foxit.com/pricing)** | Cloud API for conversion, merge, split, compress, and eSign with a unified credit pool. | **Startup**: **$1,750/year** (5,000 credits). **Business**: **$4,500/year** (15,000 credits). Most operations = 1 credit; envelopes = 5 credits . | No permanent free tier. Annual billing; credits reset, no rollover . |
-
-| **[Sejda HTML to PDF API](https://www.sejda.com/developers)** | API for HTML-to-PDF conversion with self-hosted option available. | **Starter**: **$12/month** (200 req/hr, 3 concurrent). **Professional**: $24/mo. **Business**: $48/mo. **Enterprise**: $96–$768/mo . | **Free tier** for Sejda Apps (web tools) with page/hourly limits; API has no free tier . |
-
-| **[Zamzar API](https://developers.zamzar.com/pricing)** | File conversion API covering PDF and dozens of other formats. | **Starter**: **$25/month** (500 credits, 50MB max file). **Growth**: $99/mo (2,500 credits, unlimited size). **Scale**: $299/mo (10,000 credits) . | **Test sandbox**: **100 credits**, 1MB max file, 1-day storage—for evaluation only . |
-
-| **[CloudConvert](https://cloudconvert.com/pricing)** | File conversion API with PDF, image, video, and document format support. | **Starting at $8/month** (per Software Advice) . Tiered by conversion minutes. | Not detailed in available results. |
-
-| **[Apryse (PDFTron)](https://apryse.com/pricing)** | Enterprise document processing SDK and API with server-side and client-side options. | **Entry-level packages from $1,500**; pricing modular based on features, volume, and deployment . | No public free tier. Custom pricing via sales . |
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[Sejda SDK](https://github.com/sejda-pdf/sejda-sdk)** [![GitHub Stars](https://img.shields.io/github/stars/sejda-pdf/sejda-sdk?style=social&color=white)](https://github.com/sejda-pdf/sejda-sdk/stargazers)  
-
-  **The open-source core behind Sejda's commercial API.** AGPLv3 licensed for open-source use—**unlimited tasks and executions** without fees . **Capabilities**: merge, split, compress, extract text, encrypt/decrypt, image-to-PDF, watermark, and header/footer operations. **Commercial caveat**: closed-source use requires a **PRO license at $2,000/year** (single task) . Best for open-source projects or teams willing to license commercially for closed-source use.
-
-
-
-- **[Stirling-PDF](https://github.com/Stirling-Tools/Stirling-PDF)** [![GitHub Stars](https://img.shields.io/github/stars/Stirling-Tools/Stirling-PDF?style=social&color=white)](https://github.com/Stirling-Tools/Stirling-PDF/stargazers)  
-
-  **The self-hosted PDF manipulation suite.** A locally hosted web application for merging, splitting, converting, OCR, and signing PDFs—all processing stays on your infrastructure. Best for teams wanting a private, web-based PDF toolkit without per-transaction API costs.
-
-
-
-- **[pdf-lib](https://github.com/Hopding/pdf-lib)** [![GitHub Stars](https://img.shields.io/github/stars/Hopding/pdf-lib?style=social&color=white)](https://github.com/Hopding/pdf-lib/stargazers)  
-
-  **The JavaScript PDF creation and manipulation library.** MIT licensed. Create and modify PDFs programmatically in Node.js or the browser—embed text, images, and form fields, split/merge documents, and fill forms. Best for JavaScript/TypeScript applications needing embedded PDF generation without an external API.
-
-
-
-- **[PyMuPDF (MuPDF)](https://github.com/pymupdf/PyMuPDF)** [![GitHub Stars](https://img.shields.io/github/stars/pymupdf/PyMuPDF?style=social&color=white)](https://github.com/pymupdf/PyMuPDF/stargazers)  
-
-  **The high-performance Python PDF library.** AGPL-3.0 licensed (or commercial). Bindings for MuPDF—extract text, render pages, merge/split, and manipulate PDF content with speed. Best for Python data pipelines and document processing workflows.
-
-
-
-- **[PDF.js](https://github.com/mozilla/pdf.js)** [![GitHub Stars](https://img.shields.io/github/stars/mozilla/pdf.js?style=social&color=white)](https://github.com/mozilla/pdf.js/stargazers)  
-
-  **The browser-based PDF rendering standard.** Apache 2.0 licensed. Mozilla's PDF viewer that renders documents in HTML5 canvas without plugins—the foundation for many web PDF viewers. Best for displaying PDFs in web applications; not a manipulation API.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **qpdf** — Command-line PDF transformation tool for encryption, linearization, and structural repair. Best for scripted batch operations.
-
-- **pdftk** — Legacy PDF toolkit for merge/split/forms. Best for simple scripted workflows.
-
-- **Docling (IBM)** — Document conversion library with PDF parsing and structure extraction. Best for AI/RAG pipelines needing PDF-to-structured-text.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- **SaaS pricing is per-transaction and opaque**: Adobe charges **$0.05 per document transaction** after trial ; Foxit bundles credits into annual plans starting at **$1,750/year** ; Apryse starts at **$1,500** but requires sales engagement for actual quotes .
-
-- **Free tiers are for evaluation, not production**: Zamzar's sandbox caps at **100 credits and 1MB files** ; Sejda's free tier applies to its web apps, not the API . None of the API-focused services offer a permanent free production tier.
-
-- **Sejda SDK is AGPLv3**: open-source use is free with unlimited tasks, but **closed-source commercial use requires a $2,000/year PRO license** . Verify licensing compatibility before deploying.
-
-- **Self-hosted toolkits require infrastructure**: Stirling-PDF, pdf-lib, and PyMuPDF all need servers or application integration—free software is not free operations.
-
-
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Cloud PDF Manipulation Services Banner" width="100%" />
+</p>
+
+# 📑 Awesome Cloud PDF Manipulation Services 🚀
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-PDF-Manipulation-Services/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-PDF-Manipulation-Services?style=flat-square&logo=github&color=gold" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-PDF-Manipulation-Services/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Cloud-PDF-Manipulation-Services?style=flat-square&logo=github&color=blue" alt="GitHub Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-PDF-Manipulation-Services/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-PDF-Manipulation-Services/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Cloud-PDF-Manipulation-Services?style=flat-square&color=orange" alt="Open Issues" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-PDF-Manipulation-Services/pulls"><img src="https://img.shields.io/github/issues-pr/ishandutta2007/Awesome-Cloud-PDF-Manipulation-Services?style=flat-square&color=purple" alt="PRs Welcome" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
+## 🎯 Overview & Scope
 
+A curated, developer-first list of **Cloud PDF Manipulation Services**, **REST APIs**, and **Self-Hosted Open-Source Engines**. Whether you are automating serverless document pipelines, building enterprise document workflows, executing OCR data extraction, or self-hosting PDF toolkits to avoid per-transaction SaaS fees and safeguard privacy, this guide indexes the entire PDF ecosystem.
 
-**Made for developers, document engineers, and organizations building PDF processing pipelines.**  
+> 💡 **Keywords / SEO Topics**: PDF manipulation API, Cloud PDF editor, Server-side PDF generation, PDF convert merge split, HTML to PDF API, OCR document processing, Self-hosted PDF microservice, PDF SDK.
 
-Let's make cloud PDF manipulation more open, transaction-transparent, and self-hostable.
+---
+
+## 🧭 Table of Contents
+
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS & Hosted PDF Cloud APIs](#️-saas--hosted-pdf-cloud-apis)
+- [💻 Open-Source PDF Engines & Toolkits](#-open-source-pdf-engines--toolkits)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚠️ Disclaimer](#️-disclaimer)
+
+---
+
+## 📊 Sector Overview & Market Dynamics
+
+The global **PDF manipulation and editing software market** is estimated at **$4.1B – $5.5B**, while the adjacent **Intelligent Document Processing (IDP)** sector commands an additional **$3.5B+** and is growing rapidly (>30% CAGR) with AI/OCR adoption.
+
+The industry exhibits a **moderately fragmented** structure: **Adobe** maintains an entrenched, near-monopolistic foundation across enterprise document standards, but market dynamics are not strictly "winner-take-all." A vibrant and competitive ecosystem of specialized cloud APIs (such as Apryse, Foxit, iLoveAPI, and CloudConvert) and privacy-focused, self-hosted open-source software (such as Stirling-PDF, PDF.js, and PyMuPDF) thrives by catering to developers who require lightweight integration, predictable costs, and strict data sovereignty.
+
+---
+
+## ☁️ SaaS & Hosted PDF Cloud APIs
+
+All commercial SaaS and cloud-hosted PDF manipulation platforms sorted by company scale (revenue / market capitalization / valuation in descending order):
+
+| Product | Company Scale (Revenue / Valuation) | Description | Starting Pricing | Free Tier / Trial Limit |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Adobe PDF Services API](https://developer.adobe.com/document-services/apis/pdf-services/)** | **~$21B+ TTM Revenue**<br>(~$100B Market Cap) | Enterprise-grade cloud document engine for create, convert, OCR, combine, export, compress, and form manipulation. | **$0.05 per document transaction** (volume tier discounts available; e.g., 25,000 transactions for ~$2,717/yr via CDW) | **6-month free trial** with an initial quota of free document transactions (PDF Embed API is permanently free) |
+| **[Apryse (formerly PDFTron)](https://apryse.com/pricing)** | **>$3B Valuation**<br>(>$100M EBITDA) | Full-stack enterprise document SDK and cloud processing suite offering server-side and client-side conversion, annotation, and redaction. | **$1,500/year** entry-level baseline package (modular pricing scales by volume, deployment mode, and modules) | **30-day free trial** with full SDK/API feature access for evaluation upon developer registration (no permanent free tier) |
+| **[Foxit PDF Services API](https://app.developer-api.foxit.com/pricing)** | **~$160M–$180M Revenue**<br>(~$746M Market Cap) | High-performance developer cloud API for PDF conversion, HTML rendering, merging, splitting, compression, and electronic signatures. | **$1,750/year** Startup plan (includes 5,000 unified credits; 1 credit/standard operation, 5 credits/envelope) | **Free sandbox testing account** with a limited pool of 100 test credits for API evaluation (no permanent production free tier) |
+| **[iLoveAPI (iLovePDF)](https://www.iloveapi.com/pricing)** | **~$10M–$15M Est. Revenue**<br>(Bootstrapped / Private) | High-throughput developer REST API wrapping the complete iLovePDF & iLoveIMG engine for merge, split, compress, Office-to-PDF, and OCR. | **$6.00/month** (Starter tier for 3,000 monthly credits) or **$11.00** prepaid pay-as-you-go credit packs (credits never expire) | **2,500 free credits/month** permanently with a free registered developer account (excludes paid digital signatures) |
+| **[Smallpdf](https://smallpdf.com/pricing)** | **~$8M–$11M Est. Revenue**<br>(Bootstrapped / Private) | Cloud document management platform offering PDF compression, conversion, e-signing, and editing workflows. | **$9.00/user/month** (Pro plan billed annually); programmatic API integration requires custom business onboarding | **2 free document tasks per day** on the web platform; **7-day free trial** for full Pro feature evaluation |
+| **[CloudConvert](https://cloudconvert.com/pricing)** | **~$1M–$3M Est. Revenue**<br>(Bootstrapped / Private) | Highly flexible multi-format cloud conversion API supporting PDF, DOCX, raster/vector images, CAD, audio, and video formats. | **$8.00** one-time pay-as-you-go package (500 conversion minutes) or **$8.00/month** recurring subscription | **10 free conversion credits/day** permanently (max 1 GB file size, up to 5 concurrent conversions, 5 min/task) |
+| **[Zamzar API](https://developers.zamzar.com/pricing)** | **~$1M–$2M Est. Revenue**<br>(Bootstrapped / Private) | Reliable multi-format file conversion API powering document, image, and PDF transformations with 100+ format targets. | **$25.00/month** Starter tier (500 conversion credits, 50 MB max file size, 100 concurrent requests) | **Free test sandbox** with **100 test credits**, 1 MB max file limit, and 1-day retention for integration testing |
+| **[Sejda HTML to PDF API](https://www.sejda.com/developers)** | **~$1M–$2M Est. Revenue**<br>(Bootstrapped / Private) | Dedicated cloud API for server-side HTML-to-PDF generation and document conversion with web font and JavaScript rendering. | **$12.00/month** Starter tier (200 requests/hour allowance, up to 3 concurrent connections) | **3 free tasks/hour** (up to 200 pages or 50 MB) on Sejda web apps; API requires an active subscription or sandbox key |
+
+---
+
+## 💻 Open-Source PDF Engines & Toolkits
+
+Self-hosted, developer-friendly open-source alternatives to eliminate vendor lock-in, safeguard user data, and eliminate per-document transaction bills. Sorted by GitHub stars in descending order:
+
+1. **[Stirling-PDF](https://github.com/Stirling-Tools/Stirling-PDF)** [![GitHub Stars](https://img.shields.io/github/stars/Stirling-Tools/Stirling-PDF?style=social&color=white)](https://github.com/Stirling-Tools/Stirling-PDF/stargazers)  
+   *The definitive self-hosted web PDF manipulation suite & REST API.*  
+   * **License**: GPL-3.0 | **Stack**: Java / Spring Boot / Docker / Vue  
+   * **Features**: Full web UI and OpenAPI backend for merging, splitting, rotating, converting, OCR, watermarking, redacting, and signing documents entirely within your private infrastructure.
+
+2. **[Docling (IBM)](https://github.com/DS4SD/docling)** [![GitHub Stars](https://img.shields.io/github/stars/DS4SD/docling?style=social&color=white)](https://github.com/DS4SD/docling/stargazers)  
+   *Advanced document parsing and structure extraction for AI & RAG pipelines.*  
+   * **License**: MIT | **Stack**: Python  
+   * **Features**: Parses complex PDF layouts, reading orders, tables, equations, and images into clean Markdown/JSON representations tailored for LLM processing.
+
+3. **[PDF.js](https://github.com/mozilla/pdf.js)** [![GitHub Stars](https://img.shields.io/github/stars/mozilla/pdf.js?style=social&color=white)](https://github.com/mozilla/pdf.js/stargazers)  
+   *The industry-standard client-side browser PDF rendering engine.*  
+   * **License**: Apache-2.0 | **Stack**: JavaScript / HTML5 Canvas  
+   * **Features**: Mozilla's community-driven engine that renders PDFs in modern web browsers without native browser plugins.
+
+4. **[Gotenberg](https://github.com/gotenberg/gotenberg)** [![GitHub Stars](https://img.shields.io/github/stars/gotenberg/gotenberg?style=social&color=white)](https://github.com/gotenberg/gotenberg/stargazers)  
+   *A Docker-powered stateless API for converting HTML, Markdown, and Office documents to PDF.*  
+   * **License**: MIT | **Stack**: Go / Chromium / LibreOffice / PDFtk / QPDF  
+   * **Features**: Production-ready microservice orchestration for high-fidelity HTML-to-PDF rendering via headless Chromium and LibreOffice document conversion.
+
+5. **[PyMuPDF (MuPDF)](https://github.com/pymupdf/PyMuPDF)** [![GitHub Stars](https://img.shields.io/github/stars/pymupdf/PyMuPDF?style=social&color=white)](https://github.com/pymupdf/PyMuPDF/stargazers)  
+   *High-performance Python bindings for MuPDF rendering and document extraction.*  
+   * **License**: AGPL-3.0 / Commercial | **Stack**: C / Python  
+   * **Features**: Blazing fast text/image extraction, vector drawing, PDF manipulation, rendering, encryption, and layout inspection.
+
+6. **[pypdf](https://github.com/py-pdf/pypdf)** [![GitHub Stars](https://img.shields.io/github/stars/py-pdf/pypdf?style=social&color=white)](https://github.com/py-pdf/pypdf/stargazers)  
+   *Pure-Python PDF manipulation library with zero external dependencies.*  
+   * **License**: BSD-3-Clause | **Stack**: Python  
+   * **Features**: Splitting, merging, cropping, encrypting/decrypting, metadata extraction, form filling, and page transformations.
+
+7. **[pdfcpu](https://github.com/pdfcpu/pdfcpu)** [![GitHub Stars](https://img.shields.io/github/stars/pdfcpu/pdfcpu?style=social&color=white)](https://github.com/pdfcpu/pdfcpu/stargazers)  
+   *A command-line PDF processing processor and Go library.*  
+   * **License**: Apache-2.0 | **Stack**: Go  
+   * **Features**: Fast concurrent processing for slicing, stamping, watermarking, optimizing, encrypting, and validating PDF files.
+
+8. **[pdf-lib](https://github.com/Hopding/pdf-lib)** [![GitHub Stars](https://img.shields.io/github/stars/Hopding/pdf-lib?style=social&color=white)](https://github.com/Hopding/pdf-lib/stargazers)  
+   *Create and modify PDF documents in any JavaScript/TypeScript environment.*  
+   * **License**: MIT | **Stack**: TypeScript / JavaScript (Node.js & Browser)  
+   * **Features**: Embed images, draw text, merge/split pages, modify vector graphics, and read/fill interactive AcroForms without native dependencies.
+
+9. **[pdfminer.six](https://github.com/pdfminer/pdfminer.six)** [![GitHub Stars](https://img.shields.io/github/stars/pdfminer/pdfminer.six?style=social&color=white)](https://github.com/pdfminer/pdfminer.six/stargazers)  
+   *Community maintained Python tool for extracting structured text, layout, and font data.*  
+   * **License**: MIT | **Stack**: Python  
+   * **Features**: Deep analysis of font coordinates, glyph placement, text flow, and layout trees inside PDF documents.
+
+10. **[QPDF](https://github.com/qpdf/qpdf)** [![GitHub Stars](https://img.shields.io/github/stars/qpdf/qpdf?style=social&color=white)](https://github.com/qpdf/qpdf/stargazers)  
+    *C++ library and CLI for content-preserving transformations and structural PDF repair.*  
+    * **License**: Apache-2.0 | **Stack**: C++  
+    * **Features**: Linearization (web fast viewing), encryption, page selection, object stream generation, and low-level syntax inspection.
+
+11. **[pdfme](https://github.com/pdfme/pdfme)** [![GitHub Stars](https://img.shields.io/github/stars/pdfme/pdfme?style=social&color=white)](https://github.com/pdfme/pdfme/stargazers)  
+    *TypeScript PDF generation and visual schema-based template designer.*  
+    * **License**: MIT | **Stack**: TypeScript / React  
+    * **Features**: Drag-and-drop WYSIWYG PDF template builder paired with lightweight programmatic PDF generation for invoices, labels, and reports.
+
+12. **[Sejda SDK](https://github.com/torakiki/sejda)** [![GitHub Stars](https://img.shields.io/github/stars/torakiki/sejda?style=social&color=white)](https://github.com/torakiki/sejda/stargazers)  
+    *The extensible Java core engine behind Sejda's commercial platform.*  
+    * **License**: AGPL-3.0 / Commercial PRO ($2,000/yr) | **Stack**: Java  
+    * **Features**: High-volume programmatic merge, split, compress, watermark, form manipulation, and image-to-PDF transformations.
+
+13. **[veraPDF](https://github.com/veraPDF/veraPDF-library)** [![GitHub Stars](https://img.shields.io/github/stars/veraPDF/veraPDF-library?style=social&color=white)](https://github.com/veraPDF/veraPDF-library/stargazers)  
+    *Industry-benchmark open-source PDF/A and PDF/UA conformance validator.*  
+    * **License**: GPL-3.0 / MPL-2.0 | **Stack**: Java  
+    * **Features**: Authoritative validation engine supported by the PDF Association to ensure digital preservation and accessibility standards compliance.
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are welcome! Help keep this list comprehensive, accurate, and up to date.
+
+1. 🍴 Fork the repository.
+2. 🌿 Create your feature branch (`git checkout -b feature/add-service`).
+3. 📝 Add or update entries following the established table / list formatting (ensure pricing and free tier specs are detailed).
+4. 💾 Commit your changes (`git commit -m "feat: add NewService to SaaS table"`).
+5. 🚀 Push to the branch (`git push origin feature/add-service`).
+6. 📬 Open a Pull Request with a clear summary.
+
+---
+
+## ⚠️ Disclaimer
+
+- 📖 **Independent Directory**: This repository is a community-curated technical index and is not affiliated with, sponsored by, or endorsed by Adobe, Foxit, Apryse, or any listed entity.
+- 💰 **Pricing Transparency**: SaaS pricing models evolve regularly. Always verify current quotas, concurrency limits, and enterprise contracts on vendor websites prior to deployment.
+- ⚖️ **Licensing Compliance**: Open-source tools under copyleft licenses (e.g., AGPL-3.0, GPL-3.0) may require corresponding commercial licenses (e.g., Sejda PRO, PyMuPDF Commercial) for closed-source or SaaS deployment. Always audit license terms against your application architecture.
+
+---
+
+<p align="center">
+  <sub>Built with ❤️ for developers, document engineers, and software architects building scalable cloud PDF workflows.</sub>
+</p>
